@@ -1,0 +1,278 @@
+import { StyleSheet } from 'react-native';
+import { Spacing, BorderRadius, Theme } from '@/constants/theme';
+
+export const createStyles = (theme: Theme) => {
+  return StyleSheet.create({
+    scrollContent: {
+      flexGrow: 1,
+      paddingBottom: Spacing["5xl"],
+    },
+    container: {
+      paddingHorizontal: Spacing.lg,
+      paddingTop: Spacing["2xl"],
+    },
+    // 用户卡片
+    userCard: {
+      backgroundColor: '#FFFFFF',
+      borderRadius: BorderRadius["3xl"],
+      padding: Spacing["2xl"],
+      alignItems: 'center',
+      borderWidth: 1.5,
+      borderColor: 'rgba(255,255,255,0.7)',
+      shadowColor: '#7C5CFC',
+      shadowOffset: { width: 0, height: 12 },
+      shadowOpacity: 0.2,
+      shadowRadius: 24,
+      elevation: 8,
+      marginBottom: Spacing.xl,
+    },
+    avatar: {
+      width: 80,
+      height: 80,
+      borderRadius: BorderRadius.full,
+      backgroundColor: '#EDE8FF',
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderWidth: 3,
+      borderColor: 'rgba(255,255,255,0.7)',
+      shadowColor: '#7C5CFC',
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.2,
+      shadowRadius: 8,
+      elevation: 4,
+    },
+    userName: {
+      fontSize: 24,
+      fontWeight: '800',
+      color: theme.textPrimary,
+      marginTop: Spacing.lg,
+    },
+    userPoints: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginTop: Spacing.sm,
+    },
+    userPointsText: {
+      fontSize: 18,
+      fontWeight: '700',
+      color: '#FFCB57',
+      marginLeft: Spacing.xs,
+    },
+    userPointsRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginTop: Spacing.sm,
+      gap: Spacing.lg,
+    },
+    userDeposit: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    userDepositText: {
+      fontSize: 18,
+      fontWeight: '700',
+      color: '#3B82F6',
+      marginLeft: Spacing.xs,
+    },
+    // 统计卡片
+    statsGrid: {
+      flexDirection: 'row',
+      gap: Spacing.md,
+      marginBottom: Spacing.xl,
+    },
+    statCard: {
+      flex: 1,
+      backgroundColor: '#FFFFFF',
+      borderRadius: BorderRadius["2xl"],
+      paddingVertical: Spacing.xl,
+      paddingHorizontal: Spacing.lg,
+      alignItems: 'center',
+      borderWidth: 1.5,
+      borderColor: 'rgba(255,255,255,0.7)',
+      shadowColor: '#7C5CFC',
+      shadowOffset: { width: 0, height: 8 },
+      shadowOpacity: 0.15,
+      shadowRadius: 20,
+      elevation: 6,
+    },
+    statIcon: {
+      width: 48,
+      height: 48,
+      borderRadius: BorderRadius.xl,
+      backgroundColor: '#EDE8FF',
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginBottom: Spacing.md,
+      borderWidth: 1.5,
+      borderColor: 'rgba(255,255,255,0.7)',
+    },
+    statValue: {
+      fontSize: 20,
+      fontWeight: '800',
+      color: theme.textPrimary,
+    },
+    statLabel: {
+      fontSize: 12,
+      fontWeight: '700',
+      color: theme.textSecondary,
+      marginTop: Spacing.xs,
+    },
+    // 菜单列表
+    menuSection: {
+      marginBottom: Spacing.xl,
+    },
+    sectionTitle: {
+      fontSize: 18,
+      fontWeight: '800',
+      color: theme.textPrimary,
+      marginBottom: Spacing.lg,
+    },
+    menuItem: {
+      backgroundColor: '#FFFFFF',
+      borderRadius: BorderRadius["2xl"],
+      padding: Spacing.xl,
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: Spacing.md,
+      borderWidth: 1.5,
+      borderColor: 'rgba(255,255,255,0.7)',
+      shadowColor: '#7C5CFC',
+      shadowOffset: { width: 0, height: 8 },
+      shadowOpacity: 0.15,
+      shadowRadius: 20,
+      elevation: 6,
+    },
+    menuIcon: {
+      width: 44,
+      height: 44,
+      borderRadius: BorderRadius.lg,
+      backgroundColor: '#EDE8FF',
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginRight: Spacing.lg,
+      borderWidth: 1.5,
+      borderColor: 'rgba(255,255,255,0.7)',
+    },
+    menuText: {
+      flex: 1,
+      fontSize: 16,
+      fontWeight: '700',
+      color: theme.textPrimary,
+    },
+    menuArrow: {
+      color: theme.textMuted,
+    },
+    // 积分明细
+    recordItem: {
+      backgroundColor: '#FFFFFF',
+      borderRadius: BorderRadius["2xl"],
+      padding: Spacing.xl,
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: Spacing.md,
+      borderWidth: 1.5,
+      borderColor: 'rgba(255,255,255,0.7)',
+      shadowColor: '#7C5CFC',
+      shadowOffset: { width: 0, height: 8 },
+      shadowOpacity: 0.15,
+      shadowRadius: 20,
+      elevation: 6,
+    },
+    recordIcon: {
+      width: 44,
+      height: 44,
+      borderRadius: BorderRadius.lg,
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginRight: Spacing.lg,
+      borderWidth: 1.5,
+      borderColor: 'rgba(255,255,255,0.7)',
+    },
+    recordInfo: {
+      flex: 1,
+    },
+    recordTitle: {
+      fontSize: 15,
+      fontWeight: '700',
+      color: theme.textPrimary,
+    },
+    recordDate: {
+      fontSize: 12,
+      fontWeight: '500',
+      color: theme.textSecondary,
+      marginTop: Spacing.xs,
+    },
+    recordPoints: {
+      fontSize: 18,
+      fontWeight: '800',
+    },
+    pointsPositive: {
+      color: '#10B981',
+    },
+    pointsNegative: {
+      color: '#EF4444',
+    },
+    // 空状态
+    emptyContainer: {
+      alignItems: 'center',
+      paddingVertical: Spacing["4xl"],
+    },
+    emptyText: {
+      fontSize: 16,
+      fontWeight: '500',
+      color: theme.textSecondary,
+      marginTop: Spacing.lg,
+    },
+    // 加载状态
+    loadingContainer: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    // 查看更多按钮
+    loadMoreButton: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingVertical: Spacing.lg,
+      marginTop: Spacing.sm,
+    },
+    loadMoreText: {
+      fontSize: 14,
+      fontWeight: '600',
+      color: theme.primary,
+      marginRight: Spacing.xs,
+    },
+    // Tab 切换
+    detailTabContainer: {
+      flexDirection: 'row',
+      backgroundColor: '#EDE8FF',
+      borderRadius: BorderRadius.xl,
+      padding: Spacing.xs,
+      marginBottom: Spacing.lg,
+    },
+    detailTab: {
+      flex: 1,
+      paddingVertical: Spacing.sm,
+      paddingHorizontal: Spacing.md,
+      alignItems: 'center',
+      borderRadius: BorderRadius.lg,
+    },
+    detailTabActive: {
+      backgroundColor: '#FFFFFF',
+      shadowColor: '#7C5CFC',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.1,
+      shadowRadius: 4,
+      elevation: 2,
+    },
+    detailTabText: {
+      fontSize: 14,
+      fontWeight: '700',
+      color: theme.textSecondary,
+    },
+    detailTabTextActive: {
+      color: theme.primary,
+    },
+  });
+};
